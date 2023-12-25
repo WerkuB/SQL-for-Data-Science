@@ -18,7 +18,7 @@ retrieves the number of rows that match the query criteria.<br>
 * LIMIT is used for restricting the number of rows retrieved from the database.<br>
     Syntax:
       ``` SELECT * FROM table_name LIMIT number; ```
-## NSERT, UPDATE and DELETE  
+## INSERT, UPDATE and DELETE  
 The SQL INSERT, UPDATE, and DELETE commands enable SQL users to manipulate and modify data:<br>
 * The INSERT statement introduces new rows into an existing table.<br>
     Syntax:
@@ -38,3 +38,4 @@ The SQL INSERT, UPDATE, and DELETE commands enable SQL users to manipulate and m
           SET[[column1]=[VALUES]]
           WHERE [condition];
       ```
+# CREATE, ALTER, TRUNCATE and DROP

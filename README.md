@@ -23,18 +23,18 @@ The SQL INSERT, UPDATE, and DELETE commands enable SQL users to manipulate and m
 * The INSERT statement introduces new rows into an existing table.<br>
     Syntax:
       ```
-         INSERT INTO table_name
-         (column1,column2,column3...)
-         VALUES(value1,value2,value3...);
+         INSERT INTO table_name<br>
+         (column1,column2,column3...)<br>
+         VALUES(value1,value2,value3...);<br>
       ```
 * The DELETE statement removes a row or combination of rows from a table.<br>
     Syntax:
-      ``` DELETE FROM table_name
+      ``` DELETE FROM table_name<br>
           WHERE [condition];
       ```
-* The UPDATE statement enables users to update a row or group of rows in a table.
+* The UPDATE statement enables users to update a row or group of rows in a table.<br>
     Syntax:
-      ``` UPDATE table_name
-          SET[[column1]=[VALUES]]
-          WHERE [condition];
+      ``` UPDATE table_name<br>
+          SET[[column1]=[VALUES]]<br>
+          WHERE [condition];<br>
       ```

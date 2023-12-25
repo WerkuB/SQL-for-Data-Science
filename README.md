@@ -38,4 +38,24 @@ The SQL INSERT, UPDATE, and DELETE commands enable SQL users to manipulate and m
           SET[[column1]=[VALUES]]
           WHERE [condition];
       ```
-# CREATE, ALTER, TRUNCATE and DROP
+## CREATE, ALTER, TRUNCATE and DROP
+Data Definition Language(DDL) is a subset of SQL and a part of DBMS(Database Management System). DDL consist of Commands to commands like CREATE, ALTER, TRUNCATE and DROP. These commands are used to create or modify the tables in SQL.<br>
+* CREATE: This command is used to create a new table in the database. The user has to give information like table name, column names, and their datatypes.<br>
+   Syntax:<br>
+     ``` CREATE TABLE table_name```<br>
+     ``` (```<br>
+     ```   column_1 datatype,```<br>
+     ```   column_2 datatype,```<br>
+     ```   column_3 datatype,```<br>
+     ```   .... ```<br>
+     ``` );```<br>
+* ALTER: This command is used to add, delete or change columns in the existing table. The user needs to know the existing table name and can do add, delete or modify tasks easily.<br>
+   Syntax:<br>
+     - Add new column to an existing table.<br>
+     ``` ALTER TABLE table_name ADD column_name datatype;e```<br>
+* TRUNCATE: This command is used to remove all rows from the table, but the structure of the table still exists.<br>
+     Syntax: <br>
+     ``` TRUNCATE TABLE table_name;```<br>
+* DROP: This command is used to remove an existing table along with its structure from the Database.<br>
+     Syntax: <br>
+     ``` DROP TABLE table_name;```<br>

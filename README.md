@@ -15,6 +15,6 @@ retrieves the number of rows that match the query criteria.<br>
 * DISTINCT is used to remove duplicate values from a result set.<br>
     Syntax:
       ``` SELECT DISTINCT columnname FROM table_name; ```
-* LIMIT is used for restricting the number of rows retrieved from the database.
+* LIMIT is used for restricting the number of rows retrieved from the database.<br>
     Syntax:
       ``` SELECT * FROM table_name LIMIT number; ```

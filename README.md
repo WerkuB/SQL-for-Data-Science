@@ -68,4 +68,12 @@ A sub-query or a nested SELECT is a SELECT statement that is embedded within ano
 ## Built-in functions
 * __Aggregate Function__: An aggregate function in SQL is a function that performs a calculation on a set of values and returns a single value. Aggregate functions are often used with the GROUP BY clause to group the rows into categories and apply the function to each group. Some common aggregate functions are: SUM, COUNT, AVG, MAX and MIN.<br>
 * __String functions__: String functions in SQL are functions that perform operations on strings, such as concatenating, replacing, reversing, formatting, or extracting substrings. Different SQL dialects may have different sets of string functions, but some common ones are: CONCAT, REPLACE, SUBSTRING, LOWER and TRIM.<br>
-* __Date Functions__: 
+* __Date Functions__: Date functions are functions that manipulate or return information about dates and times, such as CURDATE, NOW, DATEDIFF, etc.<br>
+## Accessing multiple Tables
+There are several ways to access multiple tables in the same query. Namely, using Sub-queries, Implicit JOIN, and JOIN operators, such as INNER JOIN and OUTER JOIN.<br>
+* Accessing Multiple Tables with Sub-Queries:<br>
+  ```SELECT name, salary FROM employees WHERE department_id IN (SELECT department_id FROM departments WHERE location = 'New York');```<br>
+* Accessing Multiple Tables with Implicit Joins:<br>
+  ```SELECT table1.column1, table2.column2 FROM table1, table2 WHERE table1.column1 = table2.column1;```<br>
+* Accessing Multiple Tables with Join Operators:<br>
+  ```SELECT table1.column1, table2.column2 FROM table1 INNER JOIN table2 ON table1.column1 = table2.column1;```<br>

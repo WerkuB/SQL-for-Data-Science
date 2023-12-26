@@ -77,3 +77,10 @@ There are several ways to access multiple tables in the same query. Namely, usin
   ```SELECT table1.column1, table2.column2 FROM table1, table2 WHERE table1.column1 = table2.column1;```<br>
 * Accessing Multiple Tables with Join Operators:<br>
   ```SELECT table1.column1, table2.column2 FROM table1 INNER JOIN table2 ON table1.column1 = table2.column1;```<br>
+## Accessing Databases using Python
+Accessing databases using Python is a common task for data analysis, web development, and automation. Python has several libraries that allow you to connect and interact with various types of databases, such as ibm_db API for IBM DB2, psycopg2 for ProstgreSQL, and dblib API for SQL Server.<br>
+* DB-API is Python's standard API for accessing relational databases. It allows us to write a single program that works with multiple kinds of relational databases instead of writing a separate program for each one.<br>
+* The DB_API connect constructor creates a connection to the database and returns a Connection Object, which is then used by the various connection methods.<br>
+* The connection methods are: The cursor() method, which returns a new cursor object using the connection. The commit() method, which is used to commit any pending transaction to the database. The rollback() method, which causes the database to roll-back to the start of any pending transaction. The close() method, which is used to close a database connection.<br>
+
+

@@ -66,4 +66,6 @@ Data Definition Language(DDL) is a subset of SQL and a part of DBMS(Database Man
 ## Sub-queries and Nested SELECTs
 A sub-query or a nested SELECT is a SELECT statement that is embedded within another SQL statement, such as SELECT, INSERT, UPDATE, or DELETE. A sub-query can return a single value, a list of values, or a table of values that can be used by the outer query. Sub-queries are useful for filtering, aggregating, or comparing data from different tables or sources.
 ## Built-in functions
-* __Aggregate Function__: An aggregate function in SQL is a function that performs a calculation on a set of values and returns a single value. Aggregate functions are often used with the GROUP BY clause to group the rows into categories and apply the function to each group. Some common aggregate functions are: SUM, COUNT, AVG, MAX and MIN.<br> 
+* __Aggregate Function__: An aggregate function in SQL is a function that performs a calculation on a set of values and returns a single value. Aggregate functions are often used with the GROUP BY clause to group the rows into categories and apply the function to each group. Some common aggregate functions are: SUM, COUNT, AVG, MAX and MIN.<br>
+* __String functions__: String functions in SQL are functions that perform operations on strings, such as concatenating, replacing, reversing, formatting, or extracting substrings. Different SQL dialects may have different sets of string functions, but some common ones are: CONCAT, REPLACE, SUBSTRING, LOWER and TRIM.<br>
+* __Date Functions__: 

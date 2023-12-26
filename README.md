@@ -83,4 +83,30 @@ Accessing databases using Python is a common task for data analysis, web develop
 * The DB_API connect constructor creates a connection to the database and returns a Connection Object, which is then used by the various connection methods.<br>
 * The connection methods are: The cursor() method, which returns a new cursor object using the connection. The commit() method, which is used to commit any pending transaction to the database. The rollback() method, which causes the database to roll-back to the start of any pending transaction. The close() method, which is used to close a database connection.<br>
 
+SQL Magic is a technique that enables you to execute SQL queries directly within the Python environment. It provides a convenient way to interact with databases without switching between different tools or environments. SQL Magic is based on the ipython-sql library, which is an extension for the IPython kernel.Cell magics start with a double %% (percent) sign and apply to the entire cell. Line magics start with a single % (percent) sign and apply to a particular line in a cell. To use SQL Magic, you need to:
+
+* Install the ipython-sql library using pip or conda.
+
+* Load the sql module using the %load_ext magic command.
+
+* Connect to a database using the %sql magic command with a valid connection string.
+
+* Run SQL queries using the %sql or %%sql magic commands and optionally assign the results to a Python variable.
+
+For example, here is how we can use SQL Magic to connect to a SQLite database and run a simple query:
+
+##### Install the ipython-sql library
+!pip install ipython-sql
+
+##### Load the sql module
+%load_ext sql
+
+##### Connect to a SQLite database
+%sql sqlite://my-username:my-password@hostname:port/BLUDB?security=SSL
+
+##### Run a SQL query and assign the result to a Python variable
+result = %sql SELECT * FROM sqlite_master
+
+We can also use SQL Magic to connect to other types of databases, such as MySQL, PostgreSQL, Oracle, etc. We just need to provide the appropriate connection string and driver name. 
+
 

@@ -59,3 +59,11 @@ Data Definition Language(DDL) is a subset of SQL and a part of DBMS(Database Man
 * DROP: This command is used to remove an existing table along with its structure from the Database.<br>
      Syntax: <br>
      ``` DROP TABLE table_name;```<br>
+## String Patterns, Sorting & Grouping 
+* The like predicate is used in a WHERE clause to search for a pattern in a column.<br>
+* The IN operator allows us to specify a set of values in a WHERE clause.<br>
+* The BETWEEN operator in SQL is used to check if a value is within a specified range of values. <br>
+## Sub-queries and Nested SELECTs
+A sub-query or a nested SELECT is a SELECT statement that is embedded within another SQL statement, such as SELECT, INSERT, UPDATE, or DELETE. A sub-query can return a single value, a list of values, or a table of values that can be used by the outer query. Sub-queries are useful for filtering, aggregating, or comparing data from different tables or sources.
+## Built-in functions
+* __Aggregate Function__: An aggregate function in SQL is a function that performs a calculation on a set of values and returns a single value. Aggregate functions are often used with the GROUP BY clause to group the rows into categories and apply the function to each group. Some common aggregate functions are: SUM, COUNT, AVG, MAX and MIN.<br> 
